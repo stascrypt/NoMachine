@@ -16,8 +16,8 @@ apt update || check_error "Не удалось обновить пакеты"
 apt install -y openbox || check_error "Не удалось установить Openbox"
 
 print_message "Шаг 2: Установка nomachine..."
-NOMACHINE_URL="https://web9001.nomachine.com/download/9.1/Linux/nomachine_9.1.24_6_amd64.deb"
-NOMACHINE_FILE="nomachine_9.1.24_6_amd64.deb"
+NOMACHINE_URL="https://web9001.nomachine.com/download/9.2/Linux/nomachine_9.2.18_3_amd64.deb"
+NOMACHINE_FILE="nomachine_9.2.18_3_amd64.deb"
 
 if [ ! -f "$NOMACHINE_FILE" ]; then
     wget "$NOMACHINE_URL" || check_error "Не удалось скачать nomachine"
